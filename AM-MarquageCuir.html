@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM-MarquageCuir</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <header>
+    </header>
+    
+    <main>
+        <h1>AM-Marquage Cuir</h1>
+        <hr>
+        <section>
+            <h2>Outils de Marquage pour le Cuir et le Bois</h2>
+            <strong>Vous souhaitez apposer votre logo, nom de marque ou un motif personnalisé sur du cuir ou du bois ?</strong>
+            <p>
+                Vous êtes au bon endroit : nous proposons des <strong>services de design personnalisé</strong> et de <strong>fabrication sur mesure d’outils de marquage</strong>, en concertation avec vous et à des <strong>tarifs raisonnables</strong>.
+            </p>
+
+            <p>
+                Nos tampons sont fabriqués en laiton massif, reconnu pour sa durabilité et ses impressions nettes.
+                Chaque tampon est livré avec une vis amovible Ø8mm (5/16”), d'autres diamètres de pas de vis disponibles sur demande.
+                Ils sont compatibles avec la plupart des presses à marquer, et peuvent également être utilisés manuellement avec le manche vissable que nous fournissons en option.<br>
+            </p>
+            <!-- <video src="Stamps1080_Etsy_lcx8cr.mp4" width="625" autoplay controls loop></video> -->
+            <hr>
+
+            <details>
+                        <summary><strong>📝 Comment Passer Commande</strong></summary>
+
+                            <ol>
+                                <li>Cliquez sur “Poser une question” ou “Demander une commande personnalisée” pour nous contacter.</li>
+                                <li>Envoyez-nous votre logo ou votre illustration (format vectoriel préféré, mais nous pouvons travailler avec la plupart des formats).</li>
+                                <li>Vous n’avez pas encore de logo ? Pas de problème ! Nous pouvons en créer un pour vous.</li>
+                            </ol>
+            </details>
+
+            <hr>
+            <details>
+                
+                <summary><strong>✏️ Service de Design Personnalisé Disponible</strong></summary>
+                <p>
+                    Nous avons des années d’expérience dans la création de logos et d’éléments décoratifs. Laissez-nous vous aider à développer un tampon unique qui reflète votre marque.
+                </p>
+            </details>
+
+            <hr>
+            <details>
+                
+                <summary><strong>💰 Tarification (Livraison Incluse)</strong></summary>
+                <p>Les prix sont basés sur la surface de votre tampon en pouces carrés *(Hauteur x Largeur = Surface)* :</p>
+                <ul>
+                    <li>Jusqu’à 1 in² — 49 €</li>
+                    <li>1 à 2 in² — 59 €</li>
+                    <li>2 à 3 in² — 69 €</li>
+                    <li>3 à 4 in² — 79 €</li>
+                </ul>
+                <p>…et ainsi de suite.</p>
+                <ul>
+                    <li>Manche optionnel pour frappage — 10 €</li>
+                </ul>            
+            </details>
+
+            <hr>
+            
+            <details>
+                
+                <summary><strong>📽️ Utilisation en Vidéo</strong></summary>
+                <p>
+                    <strong>Trois façons de marquer le cuir</strong><br><br>
+                    <iframe 
+                    width="625" height="352" 
+                    src="https://www.youtube.com/embed/1EX8TSzBnWQ" 
+                    title="Stamping leather 3 ways / leather craft tutorial" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                </p>
+                        </section>
+            </details>
+            
+            <hr>
+            
+            <div class="form-container">
+                <strong>Nous Contacter</strong><br><br>
+                    <form action="https://formsubmit.co/alexmaroquinerie@gmail.com" method="POST" enctype="multipart/form-data" target="blank">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/MarquageCuirWebSite/thanks.html">
+                        <input type="hidden" name="_subject" value="Info Marquage">
+                    
+                        <input type="text" name="name" required placeholder="Nom"><br><br>
+                        <input type="email" name="email" required placeholder="Email"><br><br>
+                        <textarea name="message" required rows="6" placeholder="Message"></textarea><br><br>
+                    
+                        <input type="file" id="fileInput" name="attachment" accept=".png, .jpg, .jpeg, .pdf, .ai, .psd, .svg, .cdr"><br><br>
+                        <div class="file-info">Formats acceptés: PNG, JPG, PDF, AI, PSD, SVG, CDR</div><br>
+                        <button type="submit" class="submit-btn">Envoyer</button>
+                    </form>
+                </div>
+            
+
+                
+                <hr>
+                <footer>
+                    Comptez deux à quatre jours pour la fabrication de votre commande sur-mesure, ajoutez une quinzaine pour une expédition éco avec suivi ou deux à trois jours pour un envoi par DHL.
+                    <p>Je suis français et implanté au Vietnam. Les tarifs sont hors taxes et frais de douanes potentiels.</p>
+                </footer>
+            </main>
+
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const maxSize = 20 * 1024 * 1024; 
+            
+            if (file && file.size > maxSize) {
+                alert('Taille de fichier maximum authorisée 20MB');
+                this.value = ''; // Clear the input
+            }
+        });
+        </script>
+
+
+</body>
+</html>
