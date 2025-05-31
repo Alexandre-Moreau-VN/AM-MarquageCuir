@@ -14,7 +14,8 @@ body {
 
 main {
     background-color: beige;
-    padding: 1em;    
+    padding: 1em;
+    max-width: 1080px;
 }
 
 p {
@@ -22,10 +23,8 @@ p {
 }
 
 details[open] summary:focus {
-    color: blue;
+    color: orange;
 }
-
- 
 
 .form-container {
     background: white;
@@ -35,6 +34,7 @@ details[open] summary:focus {
     width: 100%;
     max-width: 500px;
     backdrop-filter: blur(10px);
+    margin: 0 auto;
 }
 
 input[type="text"],
@@ -82,3 +82,60 @@ textarea {
 summary:hover {
     transform: translateY(-2px);
 }
+
+
+iframe {
+    max-width: 95%;
+    height: auto;
+}
+
+.menu a:hover{
+    color: orange;    
+}
+
+.menu a{
+    display: inline;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.bottom-menu {
+text-align: center;
+}
+
+.bottom-menu a {
+text-align: center;
+display: inline;
+margin-right: 1em;
+text-decoration: none;
+}
+
+.bottom-menu a:hover {
+    color: orange;
+}
+
+details summary {
+    list-style: none;         /* Pour Firefox */
+  }
+  
+  details summary::-webkit-details-marker {
+    display: none;            /* Pour Chrome, Safari */
+  }
+
+details summary::before {
+    content: "+";              /* Exemple : un "+" à gauche */
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  details[open] summary::before {
+    content: "–";              /* Quand le panneau est ouvert */
+  }
+
+
+  .terms-conditions {
+    text-align: center;
+  }
