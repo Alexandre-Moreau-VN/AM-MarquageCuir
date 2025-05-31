@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Outils de marquage sur mesure pour cuir et bois, fabrication artisanale, design personnalisé, tampons en laiton, alphabet, emporte-pièces.">
     <title>AM-MarquageCuir</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -11,118 +12,199 @@
     <header>
     </header>
     
+    <h1>AM-Marquage Cuir</h1>
+        <div class="menu">
+            <nav>
+                <strong>
+                    <a href="#matoirs">Matoirs</a>
+                    <a href="#alp">Alphabets</a>
+                    <a href="#ep">Emporte-Pièces</a>
+                    <a href="#contact">Nous Contacter</a>
+                </strong>
+            </nav>
+        </div>
+    <hr>
+
     <main>
-        <h1>AM-Marquage Cuir</h1>
-        <hr>
-        <section>
-            <h2>Outils de Marquage pour le Cuir et le Bois</h2>
-            <strong>Vous souhaitez apposer votre logo, nom de marque ou un motif personnalisé sur du cuir ou du bois ?</strong>
-            <p>
-                Vous êtes au bon endroit : nous proposons des <strong>services de design personnalisé</strong> et de <strong>fabrication sur mesure d’outils de marquage</strong>, en concertation avec vous et à des <strong>tarifs raisonnables</strong>.
-            </p>
-
-            <p>
-                Nos tampons sont fabriqués en laiton massif, reconnu pour sa durabilité et ses impressions nettes.
-                Chaque tampon est livré avec une vis amovible Ø8mm (5/16”), d'autres diamètres de pas de vis disponibles sur demande.
-                Ils sont compatibles avec la plupart des presses à marquer, et peuvent également être utilisés manuellement avec le manche vissable que nous fournissons en option.<br>
-            </p>
-            <!-- <video src="Stamps1080_Etsy_lcx8cr.mp4" width="625" autoplay controls loop></video> -->
-            <hr>
-
-            <details>
-                        <summary><strong>📝 Comment Passer Commande</strong></summary>
-
-                            <ol>
-                                <li>Cliquez sur “Poser une question” ou “Demander une commande personnalisée” pour nous contacter.</li>
-                                <li>Envoyez-nous votre logo ou votre illustration (format vectoriel préféré, mais nous pouvons travailler avec la plupart des formats).</li>
-                                <li>Vous n’avez pas encore de logo ? Pas de problème ! Nous pouvons en créer un pour vous.</li>
-                            </ol>
-            </details>
-
-            <hr>
-            <details>
-                
-                <summary><strong>✏️ Service de Design Personnalisé Disponible</strong></summary>
+        
+            <h2 id="matoirs">Outils de Marquage pour le Cuir et le Bois</h2>
+            
+            <div id="intro" class="intro-container">
+                <strong>Vous souhaitez apposer votre logo, nom de marque ou un motif personnalisé sur du cuir ou du bois ?</strong>
                 <p>
-                    Nous avons des années d’expérience dans la création de logos et d’éléments décoratifs. Laissez-nous vous aider à développer un tampon unique qui reflète votre marque.
+                    Vous êtes au bon endroit : nous proposons des <strong>services de design personnalisé</strong> et de <strong>fabrication sur mesure d’outils de marquage</strong>, en concertation avec vous et à des <strong>tarifs raisonnables</strong>.
                 </p>
-            </details>
-
-            <hr>
-            <details>
-                
-                <summary><strong>💰 Tarification (Livraison Incluse)</strong></summary>
-                <p>Les prix sont basés sur la surface de votre tampon en pouces carrés *(Hauteur x Largeur = Surface)* :</p>
-                <ul>
-                    <li>Jusqu’à 1 in² — 49 €</li>
-                    <li>1 à 2 in² — 59 €</li>
-                    <li>2 à 3 in² — 69 €</li>
-                    <li>3 à 4 in² — 79 €</li>
-                </ul>
-                <p>…et ainsi de suite.</p>
-                <ul>
-                    <li>Manche optionnel pour frappage — 10 €</li>
-                </ul>            
-            </details>
-
-            <hr>
-            
-            <details>
-                
-                <summary><strong>📽️ Utilisation en Vidéo</strong></summary>
                 <p>
-                    <strong>Trois façons de marquer le cuir</strong><br><br>
-                    <iframe 
-                    width="625" height="352" 
-                    src="https://www.youtube.com/embed/1EX8TSzBnWQ" 
-                    title="Stamping leather 3 ways / leather craft tutorial" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                    Nos tampons sont fabriqués en laiton massif, reconnu pour sa durabilité et ses impressions nettes.
+                    Chaque tampon est livré avec une vis amovible Ø8mm (5/16”), d'autres diamètres de pas de vis disponibles sur demande.
+                    Ils sont compatibles avec la plupart des presses à marquer, et peuvent également être utilisés manuellement avec le manche vissable que nous fournissons en option.<br>
                 </p>
-                        </section>
-            </details>
-            
+                <!-- <video src="Stamps1080_Etsy_lcx8cr.mp4" width="400" autoplay controls loop></video> -->
+            </div>
             <hr>
             
-            <div class="form-container">
-                <strong>Nous Contacter</strong><br><br>
-                    <form action="https://formsubmit.co/alexmaroquinerie@gmail.com" method="POST" enctype="multipart/form-data" target="blank">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/MarquageCuirWebSite/thanks.html">
-                        <input type="hidden" name="_subject" value="Info Marquage">
-                    
-                        <input type="text" name="name" required placeholder="Nom"><br><br>
-                        <input type="email" name="email" required placeholder="Email"><br><br>
-                        <textarea name="message" required rows="6" placeholder="Message"></textarea><br><br>
-                    
-                        <input type="file" id="fileInput" name="attachment" accept=".png, .jpg, .jpeg, .pdf, .ai, .psd, .svg, .cdr"><br><br>
-                        <div class="file-info">Formats acceptés: PNG, JPG, PDF, AI, PSD, SVG, CDR</div><br>
-                        <button type="submit" class="submit-btn">Envoyer</button>
-                    </form>
-                </div>
-            
-
+            <div class="details-container">   
+                <details>
+                            <summary><strong>📝 Comment Passer Commande</strong></summary>
+                                <ol>
+                                    <li>Cliquez sur “Poser une question” ou “Demander une commande personnalisée” pour <a href="#contact" id="contact-link-matoirs">nous contacter</a>.</li>
+                                    <li>Envoyez-nous votre logo ou votre illustration (format vectoriel préféré, mais nous pouvons travailler avec la plupart des formats).</li>
+                                    <li>Vous n’avez pas encore de logo ? Pas de problème ! Nous pouvons en créer un pour vous.</li>
+                                </ol>
+                </details>
+                <hr>
+                <details>
+                
+                    <summary><strong>✏️ Service de Design Personnalisé Disponible</strong></summary>
+                    <p>
+                        Nous avons des années d’expérience dans la création de logos et d’éléments décoratifs. Laissez-nous vous aider à développer un tampon unique qui reflète votre marque.
+                    </p>
+                </details>
+                <hr>
+                <details>
+                
+                    <summary><strong>💰 Tarification (Livraison Incluse)</strong></summary>
+                    <p>Les prix sont basés sur la surface de votre tampon en pouces carrés *(Hauteur x Largeur = Surface)* :</p>
+                    <ul>
+                        <li>Jusqu’à 1 in² — 49 €</li>
+                        <li>1 à 2 in² — 59 €</li>
+                        <li>2 à 3 in² — 69 €</li>
+                        <li>3 à 4 in² — 79 €</li>
+                    </ul>
+                    <p>…et ainsi de suite.</p>
+                    <ul>
+                        <li>Manche optionnel pour frappage — 10 €</li>
+                    </ul>
+                </details>
+                <hr>
+                
+                <details>
+                
+                    <summary><strong>📽️ Utilisation en Vidéo</strong></summary>
+                    <p>
+                        Trois façons de marquer le cuir<br><br>
+                        <div class="video-container">
+                            <iframe
+                            width="625" height="352"
+                            src="https://www.youtube.com/embed/1EX8TSzBnWQ"
+                            title="Stamping leather 3 ways / leather craft tutorial"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                            </iframe>
+                        </div>
+                    </p>
+                </details>
+                <hr>
+                <details>
+                
+                    <summary><strong>📽️ Une Presse que nous recommandons</strong></summary>
+                    <p>
+                        Un très bon rapport qualité/prix<br>
+                        <div class="video-container">
+                            <iframe
+                            width="625" height="352"
+                            src="https://www.youtube.com/embed/SdPK0GLJIQk"
+                            title="Stamping leather 3 ways / leather craft tutorial"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                            </iframe>
+                        </div>
+                    </p>
+                </details>
                 
                 <hr>
+            </div>
+                
+                
+                <h2 id="alp">Set Alphabets</h2>
+                <div class="intro-container-ep">
+                    <strong>Choisissez la Typographie, la taille, les charactères, et plus encore...</strong>
+        
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum non iure omnis doloremque assumenda aliquam vitae voluptate accusantium voluptas repellat. Dolore, nulla repudiandae! Enim nisi, qui earum quam error quod?</p>
+                        <a href="#contact" id="contact-linkalp">Nous contacter</a>.
+                    </p>
+                </div>
+                <hr>
+
+                <details>
+                    <summary><strong>Tarification</strong></summary>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis atque incidunt, quo quaerat nostrum iusto ipsum a est doloremque, sequi ipsam? Repellendus natus accusantium sed delectus porro reiciendis, maxime aliquid?</p>
+                </details>
+                <hr>
+              
+                <h2 id="ep">Emporte-Pièces</h2>
+                <div class="intro-container-ep">
+                    <strong>Montés sur bois ou sur Acrylique</strong>
+                    <p>
+                        Envoyez-nous un croquis avec dimensions, nous reviendrons vers vous avec un devis et une maquette à l'échelle rapidement.
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum non iure omnis doloremque assumenda aliquam vitae voluptate accusantium voluptas repellat. Dolore, nulla repudiandae! Enim nisi, qui earum quam error quod?</p>
+                        <a href="#contact" id="contact-linkep">Nous contacter</a>.
+                    </p>
+                </div>
+                <hr>
+
+                <details>
+                    <summary><strong>Lame montée sur base Bois</strong></summary>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis atque incidunt, quo quaerat nostrum iusto ipsum a est doloremque, sequi ipsam? Repellendus natus accusantium sed delectus porro reiciendis, maxime aliquid?</p>
+                </details>
+                <hr>
+                
+                <details>
+                    <summary><strong>Lame montée sur base Acrylique</strong></summary>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis atque incidunt, quo quaerat nostrum iusto ipsum a est doloremque, sequi ipsam? Repellendus natus accusantium sed delectus porro reiciendis, maxime aliquid?</p>
+                </details>
+                
+                
+                <hr>
+                
+                <div class="form-container" id="contact">
+                    <strong>Nous Contacter</strong><br><br>
+                        <form action="https://formsubmit.co/alexmaroquinerie@gmail.com" method="POST" enctype="multipart/form-data" target="blank">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/MarquageCuirWebSite/thanks.html">
+                            <input type="hidden" name="_subject" value="Info Marquage">
+                        
+                            <input type="text" name="name" required placeholder="Nom"  id="input-name"><br><br>
+                            <input type="email" name="email" required placeholder="Email"><br><br>
+                            <textarea name="message" required rows="6" placeholder="Message"></textarea><br><br>
+                        
+                            <input type="file" id="fileInput" name="attachment" accept=".png, .jpg, .jpeg, .pdf, .ai, .psd, .svg, .cdr"><br><br>
+                            <div class="file-info">Formats acceptés: PNG, JPG, PDF, AI, PSD, SVG, CDR</div><br>
+                            <button type="submit" class="submit-btn">Envoyer</button>
+                        </form>
+                    </div>
+                    <hr>
+
+                </main>
+                
                 <footer>
-                    Comptez deux à quatre jours pour la fabrication de votre commande sur-mesure, ajoutez une quinzaine pour une expédition éco avec suivi ou deux à trois jours pour un envoi par DHL.
-                    <p>Je suis français et implanté au Vietnam. Les tarifs sont hors taxes et frais de douanes potentiels.</p>
+
+                    <div class="bottom-menu">
+                        <nav>
+
+                                <a href="#">Retour en Haut</a>
+                                <a href="https://www.facebook.com/AlexMarquageCuir/" target="_blank">Facebook</a>
+                                <a href="https://www.etsy.com/shop/AmleathercraftCo" target="_blank">Notre Etsy</a>
+                                <a href="https://www.instagram.com/amleathercraft/" target="_blank">Instagram</a>
+                                <a href="https://www.youtube.com/c/Theleathercraftacademy" target="_blank">Youtube</a>
+                            
+                        </nav>
+                    </div>
+                    
+                    <hr>
+                    <details class="terms-conditions">
+                        <summary><small>Délais et conditions de livraison</small></summary>
+                        <p>
+                            <small>
+                                Comptez deux à quatre jours pour la fabrication de votre commande sur-mesure, ajoutez une quinzaine pour une expédition éco avec suivi ou deux à trois jours pour un envoi par DHL.
+                                Je suis français et implanté au Vietnam. Les tarifs sont hors taxes et frais de douanes potentiels.
+                            </small>
+                        </p>
+                    </details>
                 </footer>
-            </main>
 
-
-    <script>
-        document.getElementById('fileInput').addEventListener('change', function(e) {
-            const file = e.target.files[0];
-            const maxSize = 20 * 1024 * 1024; 
-            
-            if (file && file.size > maxSize) {
-                alert('Taille de fichier maximum authorisée 20MB');
-                this.value = ''; // Clear the input
-            }
-        });
-        </script>
-
+<script src="script.js"></script>
 
 </body>
 </html>
