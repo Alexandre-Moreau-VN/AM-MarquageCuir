@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(../assets/img-stamps/outil-de-marquage_cuir_00009.png); /* ou .webp, .png, etc. */
+  background-image: url(img-stamps/outil-de-marquage_cuir_00009.png); /* ou .webp, .png, etc. */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
