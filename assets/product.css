@@ -1,0 +1,106 @@
+:root {
+    --am-orange: #EE672F;
+}
+
+body {
+  background-image: url(/assets/img-stamps/outil-de-marquage_cuir_00009.png); /* ou .webp, .png, etc. */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.product-container, .intro {
+    text-align: justify;
+    background-color: rgba(245, 245, 220, 0.887);
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 1em;
+    margin: 0 auto 2em auto;
+}
+
+.product-container h1, .intro h1 {
+    text-align: left; /* or center if you prefer */
+    margin-top: 0;
+}
+
+.product-container a:hover {
+    color: var(--am-orange);
+}
+
+.img-group {
+    display: flex;
+    flex-wrap: wrap;               /* Les images passent à la ligne si besoin */
+    gap: 0.5em;                      /* Espace entre les images */
+    justify-content: center;       /* Centre les images */
+}
+
+.img-group img {
+    height: 260px;                 /* Hauteur fixe pour toutes les images */
+    width: auto;                   /* Largeur proportionnelle */
+    object-fit: cover;             /* Recadre si nécessaire */
+    flex: 1 1 auto;                /* Permet de s’adapter à l’espace */
+    max-width: 100%;               /* Empêche de dépasser du conteneur */
+}
+.img-polices {
+  max-width: 100%;
+  height: auto;
+  /* display: block; */
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+summary {
+    position: relative;
+}
+
+details summary {
+    list-style: none;         /* Pour Firefox */
+}
+  
+  details summary::-webkit-details-marker {
+    display: none;            /* Pour Chrome, Safari */
+}
+
+details summary::after {
+    content: "+";              /* Exemple : un "+" à gauche */
+    margin-right: 8px;
+    font-weight: bold;
+    justify-content: right;
+    position: absolute;
+    right: 0;
+}
+
+details[open] summary::after {
+    content: "–";           /* Quand le panneau est ouvert */
+}
+
+summary:hover {
+    transition: all 0.3s ease;;
+    transform: translateY(-2px);
+}
+
+
+summary:hover {
+    color: var(--am-orange);
+}
+
+summary {
+    padding: 0.5em;
+}
+
+.pricing-table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  max-width: 100%;
+  width: auto;
+  
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}

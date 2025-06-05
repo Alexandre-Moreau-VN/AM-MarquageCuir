@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/stylesheet.css">
+    <link rel="stylesheet" href="../assets/contact.css">
+
+</head>
+<body>
+     <div class="top-menu">
+        
+        <nav >
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="marquage.html">Outils de Marquage</a></li>
+                <li><a href="alphabets.html">Alphabets à Marquer</a></li>
+                <li><a href="emporte-pièces.html">Emporte-pièces</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+           <div class="form-container" id="contact">
+                    
+                    <p>
+                        Des questions, une demande de devis pour un outil de marquage ou de coupe ? <strong>C'est ici !</strong>
+                    </p>
+                        <form action="https://formsubmit.co/alexmaroquinerie@gmail.com" method="POST" enctype="multipart/form-data" target="blank">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thanks.html">
+                            <input type="hidden" name="_subject" value="Info Marquage">
+                        
+                            <input type="text" name="name" required placeholder="Nom"  id="input-name" >
+                            <input type="email" name="email" required placeholder="Email" >
+                            <textarea name="message" required rows="12" placeholder="Message"></textarea>
+                            
+                            <input type="file" id="file1" name="attachment1" accept=".png, .jpg, .jpeg, .pdf, .ai, .psd, .svg, .cdr">
+                            <input type="file" id="file2" name="attachment2" accept=".png, .jpg, .jpeg, .pdf, .ai, .psd, .svg, .cdr">
+                            <input type="file" id="file3" name="attachment3" accept=".png, .jpg, .jpeg, .pdf, .ai, .psd, .svg, .cdr">
+                           
+                        
+                            <div class="file-info">Jusqu'à 3 fichiers, taille max 20MB. <br>
+                                Formats acceptés: PNG, JPG, PDF, AI, PSD, SVG, CDR</div>
+                        
+                            <button type="submit" class="submit-btn">Envoyer</button>
+                        </form>
+                    </div>
+    </main>
+    <script src="../assets/script.js"></script>
+</body>
+</html>
