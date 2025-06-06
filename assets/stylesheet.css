@@ -9,13 +9,13 @@ html {scroll-behavior: smooth;
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0.5em auto;
-    /* max-width: 1080px; */
+    max-width: 1080px;
 }
 
 .top-menu {
     font-size: 22px;
     font-weight: bold;
-    padding: 1em;
+    /* padding: 2em; */
 
 }
 .top-menu ul {
@@ -28,14 +28,13 @@ body {
 }
 
 
-
-
 .top-menu a {
     display: flex;
     text-decoration: none;
     color: var(--am-orange);
     transition: all 0.2s ease;
     padding: 0.5em;
+
 }
 
 .top-menu a:hover {
