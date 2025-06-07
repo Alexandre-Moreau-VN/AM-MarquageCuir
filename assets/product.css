@@ -2,14 +2,29 @@
     --am-orange: #EE672F;
 }
 
-body .marquage-background {
-  background-image: url(img-stamps/outil-de-marquage_cuir_00009.png); /* ou .webp, .png, etc. */
+body.bg-marquage {
+  background-image: url(img-stamps/outil-de-marquage_cuir_00009.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
+body.bg-alphabet {
+  background-image: url(img-alphabets/set_alphabet_bg.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body.bg-ep {
+  background-image: url(img-emporte-pieces/emporte-pieces_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 
 .product-container, .intro {
     text-align: justify;
