@@ -2,7 +2,7 @@
     --am-orange: #EE672F;
 }
 
-body {
+body .marquage-background {
   background-image: url(img-stamps/outil-de-marquage_cuir_00009.png); /* ou .webp, .png, etc. */
   background-repeat: no-repeat;
   background-size: cover;
