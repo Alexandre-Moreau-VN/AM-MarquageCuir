@@ -45,14 +45,14 @@ body.bg-ep {
     color: var(--am-orange);
 }
 
-.img-group {
+.img-group, video {
     display: flex;
     flex-wrap: wrap;               /* Les images passent à la ligne si besoin */
     gap: 0.5em;                      /* Espace entre les images */
     justify-content: center;       /* Centre les images */
 }
 
-.img-group img {
+.img-group img, video {
     height: 260px;                 /* Hauteur fixe pour toutes les images */
     width: auto;                   /* Largeur proportionnelle */
     object-fit: cover;             /* Recadre si nécessaire */
