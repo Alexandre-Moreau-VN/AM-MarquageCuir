@@ -46,6 +46,10 @@ body.bg-ep {
     margin: 0 auto 2em auto;
 }
 
+.product-container a {
+   color: var(--vert-grisé);
+}
+
 .product-container ul, ol {
   padding-left: 1em;
   margin: 0;
@@ -80,10 +84,8 @@ body.bg-ep {
 .img-polices {
   max-width: 100%;
   height: auto;
-  /* display: block; */
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
+
 summary {
     position: relative;
 }
