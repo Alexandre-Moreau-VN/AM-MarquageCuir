@@ -64,7 +64,7 @@ body {
 }
 
 .intro-block {
-    display: flex;
+    display: block;
     text-align: justify;
     margin: auto;
     max-width: 800px;
