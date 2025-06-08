@@ -146,3 +146,8 @@ body {
 .icon:hover {
      transform: translateY(-4px);
 }
+
+.copyright {
+    color: var(--vert-grisé);
+    text-align: center;
+}
