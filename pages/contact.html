@@ -36,9 +36,11 @@
                         <form action="https://formsubmit.co/alexmaroquinerie@gmail.com" method="POST" enctype="multipart/form-data" target="blank">
                             <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thanks.html">
                             <input type="hidden" name="_subject" value="Info Marquage">
-                        
-                            <input type="text" name="name" required placeholder="Nom"  id="input-name" >
-                            <input type="email" name="email" required placeholder="Email" >
+                            
+                            <div class="name-email">    
+                                <input type="text" name="name" required placeholder="Nom"  id="input-name" >
+                                <input type="email" name="email" required placeholder="Email" >
+                            </div>
                             <textarea name="message" required rows="12" placeholder="Message"></textarea>
                             
                             <input type="file" id="file1" name="attachment1" accept=".png, .jpg, .jpeg, .pdf, .ai, .psd, .svg, .cdr">

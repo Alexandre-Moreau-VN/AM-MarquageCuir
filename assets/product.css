@@ -46,6 +46,11 @@ body.bg-ep {
     margin: 0 auto 2em auto;
 }
 
+.product-container ul, ol {
+  padding-left: 1em;
+  margin: 0;
+}
+
 .intro {
   margin-top: 1em;
 }
