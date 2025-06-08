@@ -30,6 +30,9 @@ body {
     
 }
 
+.no-decoration {
+    text-decoration: none;
+}
 
 .top-menu {
     font-size: 1em;
@@ -50,19 +53,22 @@ body {
     display: flex;
     text-decoration: none;
     color: var(--text);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     padding: 0.5em;
 
 }
 
 .top-menu a:hover {
     transform: translateY(-4px);
+    color: var(--vert-grisé);
 }
 
 .intro-block {
     display: flex;
     text-align: justify;
-    padding: 10px;
+    margin: auto;
+    max-width: 800px;
+    padding: 0.5em;
 }
 
 .images-block {
@@ -70,8 +76,18 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 5em auto 5em auto;
+    margin: 1em auto 5em auto;
     gap: 1em;
+    
+}
+
+.product-block {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .product-block img {
@@ -85,19 +101,16 @@ body {
     flex-direction: column;
 }
 
-.product-block:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    color: var(--am-orange);
-
-}
-
-.no-decoration {
-    text-decoration: none;
-}
-
 .product-block p {
     font-weight: bold;
+    color: var(--text);
+    text-align: center;
+    margin: 0.5em 0.5em;
+    transition: color 0.3s ease;
+}
+
+.product-block:hover p {
+    color: var(--vert-grisé);
 }
 
 .bottom-menu {
@@ -127,7 +140,7 @@ body {
 .icon {
     height: 32px;
     fill: var(--text);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .icon:hover {
