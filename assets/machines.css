@@ -50,6 +50,7 @@
 
 }
 
+
 .price {
     color: var(--vert-grisé);
     margin-top: 0em;
@@ -71,9 +72,9 @@ button {
     letter-spacing: 0.5px;
 }
 
-
 button:hover {
 
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(112, 112, 112, 0.3);
 }
+
