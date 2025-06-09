@@ -26,6 +26,7 @@
 
 .machines-container {
     display: flex;
+    margin-top: 3em;
     gap: 1em;
 }
 
@@ -39,7 +40,17 @@
     align-content: center;
     border: solid var(--vert-grisé) 1px;
     border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
     width: 500px;
+}
+
+img:hover{
+    /* Add a hover effect to scale the image */
+    transform: scale(1.12);
+    box-shadow: 0 10px 25px rgba(112, 112, 112, 0.3);
+    opacity: 0.85;
+    z-index: 1;
+    position: relative;
 }
 
 @media (max-width: 768px) {

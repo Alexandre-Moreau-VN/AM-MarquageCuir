@@ -1,4 +1,16 @@
 let slideIndex = 1;
+let autoSlideInterval;
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        plusSlides(1);
+    }, 5000);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -31,11 +43,6 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// Auto-advance every 5 seconds
-setInterval(() => {
-    plusSlides(1);
-}, 5000);
-
 // 👉 Add click-to-next on the image
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.getElementsByClassName("mySlides");
@@ -43,5 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
         slides[i].addEventListener("click", () => {
             plusSlides(1);
         });
+        slides[i].addEventListener("mouseenter", stopAutoSlide);
+        slides[i].addEventListener("mouseleave", startAutoSlide);
     }
+    startAutoSlide();
 });
