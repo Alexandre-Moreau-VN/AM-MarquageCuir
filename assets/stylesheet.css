@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('fonts/Manrope/Manrope-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('fonts/Manrope/Manrope-ExtraBold.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
     --am-orange: #EE672F;
     --am-orange2: #F89C66;
@@ -10,13 +24,18 @@ html {scroll-behavior: smooth;
     
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+body {    
     margin: 0.5em auto;
     /* max-width: 1080px; */
     color: var(--text);
-    font-family: manrope;
+    font-family: Manrope-Regular, sans-serif;
     font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Manrope-Bold, sans-serif;
+    font-weight: 600;
+    color: var(--text);
 }
 
 .menu-bg {
