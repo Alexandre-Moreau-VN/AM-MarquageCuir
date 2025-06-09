@@ -31,10 +31,10 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// Auto-advance every 4 seconds
+// Auto-advance every 5 seconds
 setInterval(() => {
     plusSlides(1);
-}, 4000);
+}, 5000);
 
 // 👉 Add click-to-next on the image
 document.addEventListener("DOMContentLoaded", () => {

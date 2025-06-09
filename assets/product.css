@@ -6,6 +6,14 @@
     --vert-grisé : #6C9A8B;
 }
 
+.intro,
+.product-container,
+.product-container p,
+.product-container h1,
+.product-container ul,
+.product-container ol {
+    cursor: default;
+}
 
 h1, p, details {
   color:  var(--text);

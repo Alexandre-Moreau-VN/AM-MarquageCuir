@@ -1,3 +1,10 @@
+.machines-container,
+.machines-container *,
+.intro,
+.intro * {
+    cursor: default;
+}
+
 :root {
     --am-orange: #EE672F;
     --am-orange2: #F89C66;
@@ -30,7 +37,9 @@
 .machines-img img{
     display: flex;
     align-content: center;
-    width: 400px;
+    border: solid var(--vert-grisé) 1px;
+    border-radius: 4px;
+    width: 500px;
 }
 
 @media (max-width: 768px) {
@@ -41,11 +50,16 @@
 
   .machines-img img {
     width: 100%;
-    max-width: 300px;
+    /* max-width:  */
   }
 
-  .description {
+  .short-description {
     width: 100%;
+  }
+
+  button {
+    display: block;
+    margin: auto;
   }
 
 }
@@ -66,7 +80,7 @@ button {
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
+  
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -77,4 +91,3 @@ button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(112, 112, 112, 0.3);
 }
-
