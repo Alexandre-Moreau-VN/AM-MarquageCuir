@@ -89,7 +89,9 @@ body.bg-ep {
     object-fit: cover;             /* Recadre si nécessaire */
     flex: 1 1 auto;                /* Permet de s’adapter à l’espace */
     max-width: 100%;               /* Empêche de dépasser du conteneur */
+    transition: transform 0.3s ease; /* Transition douce */
 }
+
 .img-polices {
   max-width: 100%;
   height: auto;
