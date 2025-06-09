@@ -89,41 +89,58 @@ body.bg-ep {
 
 summary {
     position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 0.5em;
 }
 
+.summary-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: transform 0.3s ease;
+}
+
+
 details summary {
-    list-style: none;         /* Pour Firefox */
+  list-style: none;         /* Pour Firefox */
 }
   
-  details summary::-webkit-details-marker {
-    display: none;            /* Pour Chrome, Safari */
+details summary::-webkit-details-marker {
+  display: none;            /* Pour Chrome, Safari */
 }
 
 details summary::after {
-    content: "+";              /* Exemple : un "+" à gauche */
-    margin-right: 8px;
-    font-weight: bold;
-    justify-content: right;
-    position: absolute;
-    right: 0;
+  content: "+";           
+  margin-right: 8px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 details[open] summary::after {
-    content: "–";           /* Quand le panneau est ouvert */
+    content: "–";           
 }
 
-summary:hover {
-    transition: all 0.3s ease;;
-    transform: translateY(-2px);
+.icon-summary {
+  height: 22px;
+  margin-right: 0.5em;
+  fill: var(--text);
+  vertical-align: center;
 }
 
 
-summary:hover {
-    color: var(--am-orange);
+.summary-content:hover .icon-summary {
+  fill: var(--am-orange);
+ 
 }
-
-summary {
-    padding: 0.5em;
+.summary-content:hover {
+  color: var(--am-orange);
+  transform: translateY(-4px);
 }
 
 .pricing-table {
