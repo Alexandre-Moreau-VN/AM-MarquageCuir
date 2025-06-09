@@ -93,7 +93,6 @@ body {
 
 .product-block img {
     text-align: center;
-    background-color: beige;
     width: 300px;
     height: 300px;
     display: flex;
@@ -135,7 +134,9 @@ body {
 }
 
 .bottom-menu .icon:hover {
-    color: var(--am-orange);
+    /* color: var(--am-orange); */
+    fill: var(--vert-grisé);
+
 }
 
 .icon {
