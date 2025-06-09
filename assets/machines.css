@@ -44,7 +44,7 @@
     width: 500px;
 }
 
-img:hover{
+.mySlides img:hover{
     /* Add a hover effect to scale the image */
     transform: scale(1.12);
     box-shadow: 0 10px 25px rgba(112, 112, 112, 0.3);
