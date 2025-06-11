@@ -172,3 +172,15 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--vert-grisé);
     text-align: center;
 }
+
+.legal {
+    display: flex; 
+    gap: 4em;
+    justify-content: center; 
+    font-size: small;
+}
+
+.legal a {
+    color: var(--vert-grisé);
+    text-decoration: none;
+}
