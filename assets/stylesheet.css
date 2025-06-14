@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .copyright {
-    color: var(--vert-grisé);
+    color: var(--text);
     text-align: center;
 }
 
@@ -182,6 +182,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .legal a {
-    color: var(--vert-grisé);
+    transition: 0.5s;
+    color: var(--text);
     text-decoration: none;
+}
+
+.legal a:hover {
+    color: var(--vert-grisé)    
 }
