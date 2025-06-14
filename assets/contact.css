@@ -49,6 +49,14 @@ textarea {
     background-color: #fafafa;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--am-orange);
+    box-shadow: 0 0 0 2px var(--am-orange2);
+    outline: none;
+}
+
 .file-info {
     font-size: 0.8rem;
     color: #666;
