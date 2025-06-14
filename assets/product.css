@@ -20,7 +20,7 @@ h1, p, details {
 }
 
 body.bg-marquage {
-  background-image: url(img-stamps/outil-de-marquage_cuir_00009.png);
+  background-image: url(img-stamps/outil-de-marquage_cuir_00009.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -28,7 +28,7 @@ body.bg-marquage {
 }
 
 body.bg-alphabet {
-  background-image: url(img-alphabets/set_alphabet_bg.jpg); 
+  background-image: url(img-alphabets/set_alphabet_bg.webp); 
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -36,7 +36,7 @@ body.bg-alphabet {
 }
 
 body.bg-ep {
-  background-image: url(img-emporte-pieces/emporte-pieces_bg.png);
+  background-image: url(img-emporte-pieces/emporte-pieces_bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
