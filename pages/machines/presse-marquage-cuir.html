@@ -54,6 +54,7 @@
                     <li><a href="../marquage.html">Outils de Marquage</a></li>
                     <li><a href="../alphabets.html">Alphabets à Marquer</a></li>
                     <li><a href="../emporte-pièces.html">Emporte-pièces</a></li>
+                    <li><a href="../machines/presse-coupe.html">Presse Manuelle</a></li>
                     <li><a href="../machines/plioirs.html">Plioirs Corne</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
@@ -95,14 +96,62 @@
         
         <div class="full-description">
             <h1>Presse à marquer</h1>
-            <p style="font-size: x-large;" class="price">279.00€ <small><br>Frais de port inclus</small></p>
+            <p style="font-size: x-large;" class="price" id="product-price">279.00€ <small><br>Frais de port inclus</small></p>
+            
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const select = document.getElementById('product-options');
+                const price = document.getElementById('product-price');
+                function updatePrice() {
+                    if (select.value === 'seule') {
+                        price.innerHTML = '279.00€ <small><br>Frais de port inclus</small>';
+                    } else {
+                        price.innerHTML = '299.00€ <small><br>Frais de port inclus</small>';
+                    }
+                }
+                select.addEventListener('change', updatePrice);
+                updatePrice();
+            });
+            </script>
             
             
-                <p>Conçue pour les artisans et les créateurs, cette presse à chaud permet de marquer le cuir avec précision, avec ou sans film doré ou argenté. Grâce à sa température réglable jusqu’à 280 °C, elle s’adapte à une grande variété de matériaux et de projets.</p>
+                <p>Conçue pour les artisans et les créateurs, cette presse à chaud permet de marquer le cuir avec précision, avec ou sans film transfert. Grâce à sa température réglable jusqu’à 280 °C, elle s’adapte à une grande variété de matériaux et de projets.</p>
                 <p>Compacte mais puissante, elle offre un plateau généreux, idéal pour la plupart des travaux de marquage.</p>
                 <p>Convient également pour le marquage du bois et du papier.</p>
+            
+            <div class="variant">                
+                    <label for="product-options"><strong>Options : </strong></label>
+                <select id="product-options" name="product-options">
+                    <option value="seule">Machine seule</option>
+                    <option value="or">Machine + rouleau film Or</option>
+                    <option value="argent">Machine + rouleau film Argent</option>
+                </select>
+            </div>
 
-            <a href="https://buy.stripe.com/4gM9AT9Bg2Zrd3t1XXgbm0X?locale=fr" target="_blank" class="no-decoration"><button class="purchase-btn">Acheter</button></a>
+            <a id="purchase-link" href="https://buy.stripe.com/4gM9AT9Bg2Zrd3t1XXgbm0X?locale=fr" target="_blank" class="no-decoration">
+                <button class="purchase-btn">Acheter</button>
+            </a>
+            
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const select = document.getElementById('product-options');
+                const purchaseLink = document.getElementById('purchase-link');
+                function updatePurchaseLink() {
+                    let url = '';
+                    if (select.value === 'seule') {
+                        url = 'https://buy.stripe.com/4gM9AT9Bg2Zrd3t1XXgbm0X?locale=fr';
+                    } else if (select.value === 'or') {
+                        url = 'https://buy.stripe.com/5kQ00jaFkgQh1kL7ihgbm10?locale=fr';
+                    } else if (select.value === 'argent') {
+                        url = 'https://buy.stripe.com/aFa9ATdRw2Zr8NdgSRgbm11?locale=fr';
+                    }
+                    purchaseLink.href = url;
+                }
+                select.addEventListener('change', updatePurchaseLink);
+                updatePurchaseLink();
+            });
+            </script>
+            
             <br>
             <details>
                 <summary>
@@ -111,15 +160,29 @@
                         <strong>Détails techniques</strong>
                     </span>
                 </summary>
-                    <ul>
-                        <li>Surface de la plaque chauffante : 130 × 120 mm</li>
-                        <li>Table graduée : 160 × 130 mm</li>
-                        <li>Double résistance pour une répartition homogène de la chaleur</li>
-                        <li>Fourni avec un porte-rouleaux</li>
-                        <li>Garantie : 1 an</li>
-                    </ul>
+                    <p>
+                        <ul>
+                            <li>Surface de la plaque chauffante : 130 × 120 mm</li>
+                            <li>Table graduée : 160 × 130 mm</li>
+                            <li>Double résistance pour une répartition homogène de la chaleur</li>
+                            <li>Fournie avec un porte-rouleaux</li>
+                            <li>Machine garantie : 1 an</li>
+                            <li>Rouleau transfert, couleur or ou argent en option 4cm x 120m, pour couleurs autres <a target="_blank" href="../contact.html">nous contacter</a></li>
+                        </ul>
+                        <strong>Dimensions : </strong>
+                    </p>
                     <span class="details-img" style="display: flex; justify-content: center; transform: none;box-shadow: none;"><img width="500px" src="../../assets/img-presse-marquage/presse_marquage_specsheet.png" style="max-width: 100%;" alt=""></span>
-                </p>
+                    
+                    <br>
+                    <strong style="text-align: center;">Films transfert : </strong>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;">
+                        <img src="../../assets/img-presse-marquage/film-argent Background Removed.png" width="150px" alt="">
+                        <img src="../../assets/img-presse-marquage/film-or Background Removed.png" width="150px" alt="">
+                    </div>
+                    <br>
+
+
+
             </details>
             <hr>
             <details>

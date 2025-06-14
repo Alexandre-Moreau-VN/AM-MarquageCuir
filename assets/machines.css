@@ -78,12 +78,38 @@
     margin: auto;
   }
 
+  .variant select{
+    display: block;
+    margin: auto;
+  }
+
 }
 
 
 .price {
     color: var(--vert-grisé);
     margin-top: 0em;
+}
+
+.variant {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.variant select {
+  display: block;
+  margin-right: auto;
+  padding: 0.5em ;
+  border: solid var(--vert-grisé) 1px;
+  border-radius: 5px;
+}
+
+select:focus {
+  border-color: var(--am-orange);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--am-orange2);
 }
 
 button {
